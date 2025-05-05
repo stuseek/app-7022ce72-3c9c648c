@@ -1,0 +1,111 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up custom variables */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --text-color: #333;
+  --background-color: #f5f5f5;
+  --font-family: Arial, sans-serif;
+}
+
+/* Global styles */
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+.checklist-container {
+  margin-bottom: 20px;
+}
+
+.checklist {
+  list-style-type: none;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checklist-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.add-item-container {
+  margin-top: 20px;
+}
+
+.add-item-container h2 {
+  margin-bottom: 10px;
+}
+
+#add-item-form {
+  display: flex;
+}
+
+#new-item-input {
+  flex: 1;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  padding: 5px 10px;
+  font-size: 1rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
