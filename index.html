@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Checklist App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Checklist</h1>
+    </header>
+
+    <main>
+        <section class="checklist-container">
+            <h2>Tasks</h2>
+            <ul class="checklist">
+                <li class="checklist-item">
+                    <input type="checkbox" id="item1">
+                    <label for="item1">Placeholder task 1</label>
+                </li>
+                <li class="checklist-item">
+                    <input type="checkbox" id="item2">
+                    <label for="item2">Placeholder task 2</label>
+                </li>
+                <li class="checklist-item">
+                    <input type="checkbox" id="item3">
+                    <label for="item3">Placeholder task 3</label>
+                </li>
+            </ul>
+        </section>
+
+        <section class="add-item-container">
+            <h2>Add New Task</h2>
+            <form id="add-item-form">
+                <input type="text" id="new-item-input" placeholder="Enter a new task" required>
+                <button type="submit">Add</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Simple Checklist App. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
